@@ -1,0 +1,16 @@
+extends layout
+
+block main
+	if collections.posts.length
+		ul
+			each post in collections.posts
+				li#article
+					h1= post.title
+					div By #{post.author} | Published #{moment(post.publishDate).format("MMMM, DD YYYY")}
+						if post.modifyDate && moment(post.publishDate).isBefore(post.modifyDate)
+							span  | Updated #{moment(post.modifyDate).format("MMMM, DD YYYY")}
+
+					div!= post.contents.substring(0,250)
+					span Read More...
+	else
+		p No posts were found.

@@ -1,0 +1,18 @@
+branches:
+  only:
+  - master
+language: node_js
+node_js:
+  - "0.10"
+install:
+  - npm install -g gulp
+  - npm install
+before_script:
+  - git remote set-url origin "https://${GH_TOKEN}@github.com/Reklino/metalsmith-for-newbies.git"
+  - git config --global user.email "yakub89@gmail.com"
+  - git config --global user.name "Reklino"
+script:
+  - gulp deploy
+env:
+  global:
+  - secure: "F6vfc33ZhHQSHvsM8Kd/+C+mN3FSkJ1NxZ3/t90z19wHFS7yjhSYSLRQDoYr1qYuGE6Hcpyv7qtbloQ8cisl8JByJ+GMRwMfLUKyrizfcRrkjVN8PNRjY25MBc/ZhKgtY8sM9cKgw/Oj+qCu74r3BOrPnRzsVFSp+f7K5zhkOL5uY4CmfAnPlwgcbOZ6IIFM381cxCIBVYCPNCjN/4fZ1pYdJDzWnOFrragw6bkt0eZ/yaEVD8QFCtPYc82IoAetRIPm/lk3tFrZQc2xeEz30G44X/FTUBzPzPud600TmgmB+0QoBGs560KKbEcWGsvQ9GOE4UjSINKUFY3oA2EczHjQvB/dp537+Kf9P2p4lNeTycrliDlc9ZC3xvopgv1wrvJJJ8h1etTJDq+Oio19WoxKZ3AQKNxFI7FBmdBFT2GPqWP4tJOPt2AgHSl5q+JxOGNGFl4MRiqIeDxaRGUqxtlhNWWLy5dvMfFB/nNC2ktL+N0Sg4RkMqedGkRfLGddoXX3v9tHuXHj8/SAvDsRqrgnjixEw8nxhY7gfa9KvOaPO013eTNyqUM2GFKuqXqlyeAq2cTrygvuEfMtUNWrv/zkpPguc7k/4RJnqqrH+dM7rb5ffZHwHicEksZ+ZhQNJhHG6m0w1q+VQFiHtwQ2Zcf4kfgv0cae5W7eIy4mEUg="

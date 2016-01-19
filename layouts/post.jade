@@ -1,0 +1,10 @@
+extends layout
+
+block main
+	article#article
+		h1= title
+		div By #{author} | Published #{moment(publishDate).format("MMMM, DD YYYY")}
+			if modifyDate && moment(publishDate).isBefore(modifyDate)
+				span Updated #{moment(modifyDate).format("MMMM, DD YYYY")}
+
+		div!= contents
