@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-	browserSync = require('browserSync'),
 	ghPages = require('gulp-gh-pages');
 
 gulp.task('deploy', function() {
