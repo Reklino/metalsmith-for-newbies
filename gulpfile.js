@@ -3,5 +3,5 @@ var gulp = require('gulp'),
 
 gulp.task('deploy', function() {
 		return gulp.src('./build/**/*')
-			.pipe(deploy());
+			.pipe(ghPages());
 	})
