@@ -3,7 +3,7 @@ prose:
   siteurl: "http://reklino.github.io/metalsmith-for-newbies"
   media: "media"
   metadata:
-    posts:
+    src/posts:
       - name: "title"
         field:
           element: "text"
