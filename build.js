@@ -2,7 +2,6 @@ var metalsmith = require('metalsmith'),
 	layouts = require('metalsmith-layouts'),
 	inPlace = require('metalsmith-in-place'),
 	markdown = require('metalsmith-markdown'),
-	browserSync = require('metalsmith-browser-sync'),
 	moment = require('moment'),
 	collections = require('metalsmith-collections'),
 	beautify = require('metalsmith-beautify');
@@ -37,10 +36,6 @@ var siteBuild = metalsmith(__dirname)
 		'html' : {
 			'wrap_line_length': 80
 		}
-	}))
-	.use(browserSync({
-		server : 'build',
-		files  : ['src/**/*', 'layouts/*.jade']
 	}))
 	.build(function(err) {
 		if(err) {

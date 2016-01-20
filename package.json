@@ -21,6 +21,7 @@
     "gulp": "^3.9.0",
     "gulp-gh-pages": "^0.5.4",
     "gulpsmith": "^0.5.5",
+    "metalsmith": "^2.1.0",
     "metalsmith-beautify": "0.0.7",
     "moment": "^2.11.1"
   }
