@@ -8,10 +8,8 @@ title: Test Post
 ---
 
 
-
-
 ## Test Post
 
-Peppermint Butler...
-![pep_butt.jpg]({{site.baseurl}}/media/pep_butt.jpg)
 
+Peppermint Butler is the best.
+![pep_butt.jpg]({{site.baseurl}}/media/pep_butt.jpg)
