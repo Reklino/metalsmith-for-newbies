@@ -8,5 +8,5 @@ gulp.task('deploy', function() {
 
 gulp.task('media', function() {
 	return gulp.src(['./media/**/*'])
-			.pipe(dest('./build'));
+			.pipe(gulp.dest('./build'));
 	})
