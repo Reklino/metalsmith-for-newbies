@@ -1,5 +1,7 @@
 prose:
   rooturl: "src"
+  siteurl: "http://reklino.github.io/metalsmith-for-newbies"
+  baseurl: "http://reklino.github.io/metalsmith-for-newbies"
   media: "media"
   metadata:
     src/posts:
