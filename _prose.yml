@@ -2,8 +2,6 @@ prose:
   rooturl: "src"
   siteurl: "http://reklino.github.io/metalsmith-for-newbies"
   media: "media"
-  ignore:
-    - index.md
   metadata:
     posts:
       - name: "title"
@@ -26,16 +24,16 @@ prose:
           label: "Author"
           help: "Who are you?"
           options:
-            - name: 'Kaitlin'
-              value: 'Kaitlin Abbitt'
-            - name: 'Fernando'
-              value: 'Fernando Godina'
-            - name: 'Eric'
-              value: 'Eric Toledo'
-            - name: 'Aarron'
-              value: 'Aarron Walter'
-            - name: 'Jacob'
-              value: 'Jacob Davidson'
+            - name: "Kaitlin"
+              value: "Kaitlin Abbitt"
+            - name: "Fernando"
+              value: "Fernando Godina"
+            - name: "Eric"
+              value: "Eric Toledo"
+            - name: "Aarron"
+              value: "Aarron Walter"
+            - name: "Jacob"
+              value: "Jacob Davidson"
       - name: "layout"
         field:
           element: "hidden"
