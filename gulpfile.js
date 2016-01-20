@@ -17,6 +17,6 @@ gulp.task('media', function() {
 // fix for prose image urls.
 gulp.task('prose-fix', function() {
 	return gulp.src(['./src/**/*.md'])
-			.pipe(replace('{{site.baseurl}}', 'metalsmith-for-newbies/'))
+			.pipe(replace('{{site.baseurl}}', ''))
 			.pipe(gulp.dest('./src'))
 	})
