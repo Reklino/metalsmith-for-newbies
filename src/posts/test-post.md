@@ -12,5 +12,5 @@ title: Test Post
 ### Test Post
 
 
-_Peppermint_ **Butler**
+_Peppermint_ **Butler** is mah frand.
 ![pep_butt.jpg]({{site.baseurl}}/media/pep_butt.jpg)
