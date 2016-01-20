@@ -8,8 +8,9 @@ title: Test Post
 ---
 
 
-## Test Post
+### Test Post
 
 
-Peppermint Butler is the best.
+_Peppermint_ **Butler** is the best.
 ![pep_butt.jpg]({{site.baseurl}}/media/pep_butt.jpg)
+
