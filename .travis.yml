@@ -7,6 +7,7 @@ node_js:
 install:
   - npm install -g gulp
   - npm install
+  - node build
 before_script:
   - git remote set-url origin "https://${GH_TOKEN}@github.com/Reklino/metalsmith-for-newbies.git"
   - git config --global user.email "yakub89@gmail.com"

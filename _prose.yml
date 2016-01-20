@@ -1,0 +1,14 @@
+prose:
+  rooturl: "src"
+  siteurl: "http://reklino.github.io/metalsmith-for-newbies"
+  media: "media"
+  ignore:
+    - index.md
+  metadata:
+    posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Enter a title for your post"
+          type: "text"
