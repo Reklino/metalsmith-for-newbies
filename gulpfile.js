@@ -11,12 +11,12 @@ gulp.task('deploy', function() {
 // fix for prose media destination
 gulp.task('media', function() {
 	return gulp.src(['./media/**/*'])
-			.pipe(gulp.dest('./build'));
+			.pipe(gulp.dest('./build/media'));
 	})
 
 // fix for prose image urls.
 gulp.task('prose-fix', function() {
 	return gulp.src(['./src/**/*.md'])
-			.pipe(replace('{{site.baseurl}}', ''))
+			.pipe(replace('metalsmith-for-newbies/', ''))
 			.pipe(gulp.dest('./src'))
 	})
