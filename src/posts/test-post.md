@@ -12,5 +12,5 @@ title: Test Post
 ### Test Post
 
 
-_Peppermint_ **Butler** is the bestest.
+_Peppermint_ **Butler** is my besty.
 ![pep_butt.jpg]({{site.baseurl}}/media/pep_butt.jpg)
