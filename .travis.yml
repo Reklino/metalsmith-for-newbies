@@ -9,6 +9,7 @@ install:
 - npm install
 before_script:
 - gulp media
+- gulp prose-fix
 - node build
 - git remote set-url origin "https://${GH_TOKEN}@github.com/Reklino/metalsmith-for-newbies.git"
 - git config --global user.email "yakub89@gmail.com"
