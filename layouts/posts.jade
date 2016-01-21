@@ -2,15 +2,19 @@ extends layout
 
 block main
 	if collections.posts.length
-		ul
-			each post in collections.posts
-				li#article
-					h1= post.title
-					div By #{post.author} | Published #{moment(post.publishDate).format("MMMM, DD YYYY")}
+		each post in collections.posts
+			article
+				header
+					h2.title
+						a(href=post.path)= post.title
+					p.meta
 						if post.modifyDate && moment(post.publishDate).isBefore(post.modifyDate)
-							span  | Updated #{moment(post.modifyDate).format("MMMM, DD YYYY")}
+							span Updated #{moment(post.modifyDate).format("MMMM, DD YYYY")}
+						else
+							span Published #{moment(post.publishDate).format("MMMM, DD YYYY")}
+						span  by #{post.author}
 
-					div!= post.contents.substring(0,250)
-					span Read More...
+				main!= post.description
+				footer
 	else
 		p No posts were found.

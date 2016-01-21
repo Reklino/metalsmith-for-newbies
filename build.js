@@ -4,7 +4,8 @@ var metalsmith = require('metalsmith'),
     markdown = require('metalsmith-markdown'),
     moment = require('moment'),
     collections = require('metalsmith-collections'),
-    beautify = require('metalsmith-beautify');
+    beautify = require('metalsmith-beautify'),
+    permalinks = require('metalsmith-permalinks');
 
 var siteBuild = metalsmith(__dirname)
     .metadata({
@@ -23,11 +24,11 @@ var siteBuild = metalsmith(__dirname)
         }
     }))
     .use(markdown())
-    .use(layouts({
-        engine: 'jade',
-        moment: moment
+    .use(permalinks({
+        pattern: ':title',
+        date: 'YYYY'
     }))
-    .use(inPlace({
+    .use(layouts({
         engine: 'jade',
         moment: moment
     }))

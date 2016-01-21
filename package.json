@@ -26,6 +26,7 @@
     "gulpsmith": "^0.5.5",
     "metalsmith": "^2.1.0",
     "metalsmith-beautify": "0.0.7",
+    "metalsmith-permalinks": "^0.4.1",
     "moment": "^2.11.1"
   }
 }

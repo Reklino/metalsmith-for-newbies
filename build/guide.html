@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Writer's Guide | MetalSmith for Newbies</title>
+	<link rel="stylesheet" href="./main.css">
+	<!-- fonts from typekit-->
+	<script src="https://use.typekit.net/kgu3bag.js"></script>
+	<script>
+		try {
+			Typekit.load({
+				async: true
+			});
+		} catch (e) {}
+	</script>
+</head>
+
+<body>
+	<aside id="layout-aside">
+		<nav>
+			<h4>Nav</h4><a href="index.html">Blog</a><a href="guide.html">Writer's Guide</a><a href="http://google.com">Map</a></nav>
+	</aside>
+	<main id="layout-main">
+		<div>
+			<p>All content of this page is published via <strong>markdown</strong>. If you&#39;re
+				unfamiliar with markdown, <a href="https://guides.github.com/features/mastering-markdown/">here&#39;s a handy guide</a>				to get you started. You can <strong>bold</strong> stuff, <em>italicize</em> it,
+				add <a href="http://google.com">links</a> to it, etc.</p>
+			<p>To simplify design and content writing, we are limiting ourselves to two header
+				sizes. Use <strong>Header 1</strong> to organize the highest level topics, and
+				<strong>Header 2</strong> at the lower level. See the <a href="./sample.html">sample post</a>				for context.</p>
+			<hr>
+			<h1 id="header-1">Header 1</h1>
+			<h2 id="header-2">Header 2</h2>
+			<h2 id="fun-with-lists-">Fun with lists!</h2>
+			<ol>
+				<li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3
+					<ul>
+						<li>Item 3a</li>
+						<li>Item 3b</li>
+					</ul>
+				</li>
+			</ol>
+			<h2 id="quotes">Quotes</h2>
+			<p>Wise words from as wise woman:</p>
+			<blockquote>
+				<p>Coffee. The finest organic suspension ever devised... I beat the Borg with it.
+					~ Captain Janeway</p>
+			</blockquote>
+			<h2 id="figures">Figures</h2>
+			<p><img src="http://i.giphy.com/10xOn1VHkwievm.gif" alt="Caption goes here"></p>
+			<h2 id="code-snippets">Code Snippets</h2>
+			<p>Here is some <code>inline code</code></p>
+			<hr>
+			<h1 id="custom-elements">Custom Elements</h1>
+			<p><strong>NOTE</strong>: Since these are custom elements that we&#39;ve built for
+				our own templates, these will not appear as expected in the prose previewer.
+				Rest assured that they will appear correctly once commited to the blog :).</p>
+			<h2 id="askew-images">Askew Images</h2>
+			<figure class="figure-askew">
+				<img src="http://i.giphy.com/10xOn1VHkwievm.gif" alt="Caption goes here">
+			</figure>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+				exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+				irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+				nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+				qui officia deserunt mollit anim id est laborum.</p>
+			<hr>
+			<h2 id="larger-images">Larger Images</h2>
+			<figure class="figure-large">
+				<img src="http://i.giphy.com/10xOn1VHkwievm.gif" alt="Caption goes here">
+			</figure>
+
+			<hr>
+			<h2 id="smaller-images">Smaller Images</h2>
+			<figure class="figure-half">
+				<img src="http://i.giphy.com/10xOn1VHkwievm.gif" alt="Caption goes here">
+			</figure>
+			<figure class="figure-half">
+				<img src="http://i.giphy.com/10xOn1VHkwievm.gif" alt="Caption goes here">
+			</figure>
+		</div>
+		<footer id="layout-footer">
+			<p>footer text</p>
+		</footer>
+	</main>
+</body>
+
+</html>

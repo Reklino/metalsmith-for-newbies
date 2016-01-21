@@ -1,0 +1,41 @@
+body {
+	display: flex;
+	justify-content: center;
+	padding: 3em;
+}
+
+#layout-aside {
+	//background: blue;
+	min-width: 200px;
+	margin-right: 1em;
+
+	nav {
+		position: fixed;
+		a {
+			display: block;
+		}
+	}
+}
+
+#layout-main {
+	//background: red;
+	max-width: 600px;
+	min-width: 300px;
+}
+
+#layout-footer {
+	clear: both;
+	margin-top: $ms-base*2;
+	border-top: 1px dashed lighten($pencil, 30);
+	padding: $ms-base*2 0;
+	max-width: 600px;
+
+	&, p, span {
+		font-family: $secondary;
+	}
+
+	&:before {
+		clear: both;
+		display: block;
+	}
+}

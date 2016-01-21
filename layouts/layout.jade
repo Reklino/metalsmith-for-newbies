@@ -5,13 +5,21 @@ html
 			block title
 				title= title ? title + " | " + site.title : site.title
 			block styles
+				link(rel="stylesheet" href="./main.css")
+
+			// fonts from typekit
+			script(src="https://use.typekit.net/kgu3bag.js")
+			script.
+				try{Typekit.load({ async: true });}catch(e){}
 	body
 		block body
-			aside#aside
-				h3 Nav
-				ul
-					each link in [ { name:"Home", url:"http://google.com" }, { name:"Source", url:"https://github.com" }, { name:"Map", url:"http://google.com" } ]
-						li
-							a(href=link.url)= link.name
-			#layout-main
+			aside#layout-aside
+				nav
+					h4 Nav
+					each link in [ { name:"Blog", url:"index.html" }, { name:"Writer's Guide", url:"guide.html" }, { name:"Map", url:"http://google.com" } ]
+						a(href=link.url)= link.name
+			main#layout-main
 				block main
+
+				footer#layout-footer
+					p footer text

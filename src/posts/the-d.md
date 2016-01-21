@@ -1,14 +1,17 @@
 ---
-title: Getting Started
+title: What?
 publishDate: 2016-01-18
 modifyDate: 2016-01-19
 author: Jacob Davidson
 layout: post.jade
+description: Post about nothing.
 ---
 
 MetalSmith is a static site generator powered by node.js. Javascript's hot right now. Static Site Gens are hot right now. Therefore:
 
-[Mugatu](http://i.giphy.com/l3nW85J0lT1bfpIfC.gif)
+<figure class="figure-askew">
+![Mugatu](http://i.giphy.com/l3nW85J0lT1bfpIfC.gif)
+</figure>
 
 MetalSmith... So hot right now.
 
