@@ -2,26 +2,35 @@
 <html>
 
 <head>
-	<title>Getting Started | MetalSmith for Newbies</title>
+	<title>What? | MetalSmith for Newbies</title>
+	<link rel="stylesheet" href="./main.css">
+	<!-- fonts from typekit-->
+	<script src="https://use.typekit.net/kgu3bag.js"></script>
+	<script>
+		try {
+			Typekit.load({
+				async: true
+			});
+		} catch (e) {}
+	</script>
 </head>
 
 <body>
-	<aside id="aside">
-		<h3>Nav</h3>
-		<ul>
-			<li><a href="http://google.com">Home</a></li>
-			<li><a href="https://github.com">Source</a></li>
-			<li><a href="http://google.com">Map</a></li>
-		</ul>
+	<aside id="layout-aside">
+		<nav>
+			<h4>Nav</h4><a href="index.html">Blog</a><a href="guide.html">Writer's Guide</a><a href="http://google.com">Map</a></nav>
 	</aside>
-	<div id="layout-main">
+	<main id="layout-main">
 		<article id="article">
-			<h1>Getting Started</h1>
+			<h1>What?</h1>
 			<div>By Jacob Davidson | Published January, 18 2016<span>Updated January, 19 2016</span></div>
 			<div>
 				<p>MetalSmith is a static site generator powered by node.js. Javascript&#39;s hot
 					right now. Static Site Gens are hot right now. Therefore:</p>
-				<p><a href="http://i.giphy.com/l3nW85J0lT1bfpIfC.gif">Mugatu</a></p>
+				<figure class="figure-askew">
+					<img src="http://i.giphy.com/l3nW85J0lT1bfpIfC.gif" alt="Mugatu">
+				</figure>
+
 				<p>MetalSmith... So hot right now.</p>
 				<p>On top of being on the cutting edge of tech, it&#39;s actually got a lot of really
 					great plugins. If you&#39;ve used a build tool like Gulp or Grunt before, chances
@@ -35,7 +44,10 @@
 					Grunt.</p>
 			</div>
 		</article>
-	</div>
+		<footer id="layout-footer">
+			<p>footer text</p>
+		</footer>
+	</main>
 </body>
 
 </html>
