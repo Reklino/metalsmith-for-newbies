@@ -1,0 +1,29 @@
+/*=================================
+=            Shortform            =
+=================================*/
+
+article.preview {
+	margin-bottom: 3em;
+	header {
+		.meta {
+			color: $pencil;
+		}
+	}
+	main {
+		padding: 1em 0;
+	}
+
+}
+
+/*=====  End of Shortform  ======*/
+
+
+/*================================
+=            Longform            =
+================================*/
+
+article.post {
+	margin-bottom: 3em;
+}
+
+/*=====  End of Longform  ======*/

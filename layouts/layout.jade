@@ -5,7 +5,7 @@ html
 			block title
 				title= title ? title + " | " + site.title : site.title
 			block styles
-				link(rel="stylesheet" href="./main.css")
+				link(rel="stylesheet" href="http://localhost:3000/main.css")
 
 			// fonts from typekit
 			script(src="https://use.typekit.net/kgu3bag.js")
@@ -14,12 +14,13 @@ html
 	body
 		block body
 			aside#layout-aside
+				header Site Name
 				nav
-					h4 Nav
-					each link in [ { name:"Blog", url:"index.html" }, { name:"Writer's Guide", url:"guide.html" }, { name:"Map", url:"http://google.com" } ]
+					each link in navigation
 						a(href=link.url)= link.name
+
 			main#layout-main
 				block main
 
 				footer#layout-footer
-					p footer text
+					a(href="http://localhost:3000/guide.html") Content Guide

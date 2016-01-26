@@ -117,23 +117,74 @@ ol {
 blockquote, blockquote p, blockquote span {
   font-family: "freight-sans-pro", courier, monospace; }
 
+/*============================
+=            Base            =
+============================*/
 hr {
   border-top: 1px dashed lightgray;
   border-width: 1px 0 0 0;
   margin: 4em 0; }
 
-article {
-  margin-bottom: 3em; }
-
-h1.title a {
-  text-decoration: none;
-  color: #383838; }
-  h1.title a:visited {
-    color: #383838; }
-
 img {
   width: 100%; }
 
+/*=====  End of Base  ======*/
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 3em; }
+
+#layout-aside {
+  min-width: 200px;
+  margin-right: 1em; }
+  #layout-aside nav {
+    position: fixed; }
+    #layout-aside nav a {
+      display: block; }
+
+#layout-main {
+  max-width: 600px;
+  min-width: 300px; }
+
+#layout-footer {
+  clear: both;
+  margin-top: 2em;
+  border-top: 1px dashed lightgray;
+  padding: 2em 0;
+  max-width: 600px; }
+  #layout-footer, #layout-footer p, #layout-footer span {
+    font-family: "freight-sans-pro", courier, monospace; }
+  #layout-footer:before {
+    clear: both;
+    display: block; }
+
+/*=================================
+=            Shortform            =
+=================================*/
+article.preview {
+  margin-bottom: 3em; }
+  article.preview header .meta {
+    color: #868686; }
+  article.preview main {
+    padding: 1em 0; }
+
+/*=====  End of Shortform  ======*/
+/*================================
+=            Longform            =
+================================*/
+article.post {
+  margin-bottom: 3em; }
+
+/*=====  End of Longform  ======*/
+/*===============================
+=            Figures            =
+===============================*/
 figure.figure-askew {
   float: left;
   position: relative;
@@ -168,37 +219,4 @@ figure.figure-half {
     display: block;
     clear: both; }
 
-body {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 3em; }
-
-#layout-aside {
-  min-width: 200px;
-  margin-right: 1em; }
-  #layout-aside nav {
-    position: fixed; }
-    #layout-aside nav a {
-      display: block; }
-
-#layout-main {
-  max-width: 600px;
-  min-width: 300px; }
-
-#layout-footer {
-  clear: both;
-  margin-top: 2em;
-  border-top: 1px dashed lightgray;
-  padding: 2em 0;
-  max-width: 600px; }
-  #layout-footer, #layout-footer p, #layout-footer span {
-    font-family: "freight-sans-pro", courier, monospace; }
-  #layout-footer:before {
-    clear: both;
-    display: block; }
+/*=====  End of Figures  ======*/

@@ -3,11 +3,11 @@ extends layout
 block main
 	if collections.posts.length
 		each post in collections.posts
-			article
+			article.preview
 				header
 					h2.title
 						a(href=post.path)= post.title
-					p.meta
+					div.meta
 						if post.modifyDate && moment(post.publishDate).isBefore(post.modifyDate)
 							span Updated #{moment(post.modifyDate).format("MMMM, DD YYYY")}
 						else

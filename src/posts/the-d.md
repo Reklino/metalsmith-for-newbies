@@ -1,5 +1,5 @@
 ---
-title: What?
+title: Example Post 1
 publishDate: 2016-01-18
 modifyDate: 2016-01-19
 author: Jacob Davidson

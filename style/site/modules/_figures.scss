@@ -1,0 +1,53 @@
+/*===============================
+=            Figures            =
+===============================*/
+
+figure.figure-askew {
+	float: left;
+	position: relative;
+	width: 70%;
+	margin-left: -5%;
+	margin-right: 1em;
+
+	img {
+		max-width: 100%;
+	}
+
+	&:after {
+		display: block;
+		clear: both;
+	}
+}
+
+figure.figure-large {
+	margin-bottom: 1em;
+
+	img {
+		position: relative;
+		width: 120%;
+		margin-left: -5%;
+	}
+	&:after {
+		display: block;
+		clear: both;
+	}
+}
+
+figure.figure-half {
+	width: 50%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 1em;
+	margin-bottom: 1em;
+
+	img {
+		width: 100%;
+	}
+
+	&:after {
+		display: block;
+		clear: both;
+	}
+}
+
+/*=====  End of Figures  ======*/

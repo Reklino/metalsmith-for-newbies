@@ -1,12 +1,12 @@
 ---
 layout: post.jade
-modifyDate: 2016-01-19T00:00:00.000Z
-publishDate: 2016-01-19T00:00:00.000Z
-title: Installation
+modifyDate: "2016-01-19 23:48 -0500"
+publishDate: "2016-01-19 23:48 -0500"
 author: Jacob Davidson
-description: So you've decided to mess around with Metalsmith. This post walks through installation and setup while explaining each piece of the process.
-published: true
+published: false
+title: Example Post 3
+description: This is a test post about absolutely nothing.
 ---
 
-
-Coming Soon...
+_Peppermint_ **Butler** is mah frand.
+![pep_butt.jpg](/media/pep_butt.jpg)

@@ -1,69 +1,15 @@
-// hr
+/*============================
+=            Base            =
+============================*/
+
 hr {
 	border-top: 1px dashed lighten($pencil, 30);
 	border-width: 1px 0 0 0;
 	margin: $ms-base*4 0;
 }
 
-// articles
-article {
-	margin-bottom: 3em;
-}
-h1.title a {
-	text-decoration: none;
-	color: $ink;
-	&:visited { color: $ink; }
-}
-
-// figures
 img {
 	width: 100%;
 }
 
-figure.figure-askew {
-	float: left;
-	position: relative;
-	width: 70%;
-	margin-left: -5%;
-	margin-right: 1em;
-
-	img {
-		max-width: 100%;
-	}
-
-	&:after {
-		display: block;
-		clear: both;
-	}
-}
-
-figure.figure-large {
-	margin-bottom: 1em;
-
-	img {
-		position: relative;
-		width: 120%;
-		margin-left: -5%;
-	}
-	&:after {
-		display: block;
-		clear: both;
-	}
-}
-
-figure.figure-half {
-	width: 50%;
-	float: left;
-	box-sizing: border-box;
-	padding-right: 1em;
-	margin-bottom: 1em;
-
-	img {
-		width: 100%;
-	}
-
-	&:after {
-		display: block;
-		clear: both;
-	}
-}
+/*=====  End of Base  ======*/

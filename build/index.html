@@ -3,7 +3,7 @@
 
 <head>
 	<title>Posts | MetalSmith for Newbies</title>
-	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="http://localhost:3000/main.css">
 	<!-- fonts from typekit-->
 	<script src="https://use.typekit.net/kgu3bag.js"></script>
 	<script>
@@ -17,38 +17,35 @@
 
 <body>
 	<aside id="layout-aside">
-		<nav>
-			<h4>Nav</h4><a href="index.html">Blog</a><a href="guide.html">Writer's Guide</a><a href="http://google.com">Map</a></nav>
+		<header>Site Name</header>
+		<nav><a href="index.html">Blog</a><a href="guide.html">About</a></nav>
 	</aside>
 	<main id="layout-main">
-		<article>
+		<article class="preview">
 			<header>
-				<h2 class="title"><a href="what">What?</a></h2>
-				<p class="meta"><span>Updated January, 18 2016</span><span> by Jacob Davidson</span></p>
+				<h2 class="title"><a href="example-post-1">Example Post 1</a></h2>
+				<div class="meta"><span>Updated January, 18 2016</span><span> by Jacob Davidson</span></div>
 			</header>
 			<main>Post about nothing.</main>
 			<footer></footer>
 		</article>
-		<article>
+		<article class="preview">
 			<header>
-				<h2 class="title"><a href="installation">Installation</a></h2>
-				<p class="meta"><span>Published January, 18 2016</span><span> by Jacob Davidson</span></p>
-			</header>
-			<main>So you've decided to mess around with Metalsmith. This post walks through installation
-				and setup while explaining each piece of the process.</main>
-			<footer></footer>
-		</article>
-		<article>
-			<header>
-				<h2 class="title"><a href="test-post">Test Post</a></h2>
-				<p class="meta"><span>Published January, 19 2016</span><span> by Jacob Davidson</span></p>
+				<h2 class="title"><a href="example-post-2">Example Post 2</a></h2>
+				<div class="meta"><span>Published January, 19 2016</span><span> by Jacob Davidson</span></div>
 			</header>
 			<main>This is a test post about absolutely nothing.</main>
 			<footer></footer>
 		</article>
-		<footer id="layout-footer">
-			<p>footer text</p>
-		</footer>
+		<article class="preview">
+			<header>
+				<h2 class="title"><a href="example-post-3">Example Post 3</a></h2>
+				<div class="meta"><span>Published January, 19 2016</span><span> by Jacob Davidson</span></div>
+			</header>
+			<main>This is a test post about absolutely nothing.</main>
+			<footer></footer>
+		</article>
+		<footer id="layout-footer"><a href="http://localhost:3000/guide.html">Content Guide</a></footer>
 	</main>
 </body>
 
